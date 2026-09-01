@@ -1,0 +1,31 @@
+{
+    "data": {
+        "train_data_path": "./data/bio_remaining.jsonl"
+    },
+    "influence": {
+        "outdir": "./data_outputs/llama/poison/bio/",
+        "seed": 42,
+        "cal_words_infl": false,
+        "save_to_grads_path": true,
+        "n_threads": 1,
+        "RapidGrad": {
+            "enable": true,
+            "RapidGrad_K": 65536,
+            "shuffle_lambda": 20
+        },
+        "offload_train_grad": false,
+        "skip_test": true,
+        "skip_influence": true,
+        "grads_path": "./gradients/bio_llama/"
+    },
+    "model": {
+        "model_path": "meta-llama/Llama-3.1-8B-Instruct",
+        "max_length": 512,
+        "load_in_4bit": false,
+        "lora_path": "<YOUR_HF_USERNAME>/llama_bio"
+
+    },
+    "postprocess": {
+        "enable": false
+    }
+}
