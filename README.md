@@ -9,36 +9,49 @@
   <sub>Given only a handful of undesired outputs, GRACE builds <b>both</b> the forget set and the retain set.</sub>
 </p>
 
+
+<a id="citation"></a>
+
+If you use our method, please cite us:
+
+```bibtex
+@inproceedings{bushipaka-etal-2026-grace,
+    title = "{GRACE}: Gradient-guided Coreset Selection for {LLM} Unlearning",
+    author = "Bushipaka, Praveen  and
+      D{'}Angelo, Andrea  and
+      Passaro, Lucia  and
+      Cucinotta, Tommaso",
+    editor = "Lee, Hung-Yi  and
+      Dev, Sunipa  and
+      Li, Jessy  and
+      Elliott, Desmond",
+    booktitle = "Findings of the {A}ssociation for {C}omputational {L}inguistics: {EMNLP} 2026",
+    month = oct,
+    year = "2026",
+    address = "Budapest, Hungary",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2026.findings-emnlp.1212/",
+    pages = "25601--25620",
+    ISBN = "979-8-89176-462-0"
+}
+```
+
 <h1 align="center">GRACE: GRAdient-guided Coreset sElection for LLM Unlearning</h1>
 
 <p align="center">
   <a href="https://www.python.org/downloads/"><img src="https://img.shields.io/badge/python-3.10+-blue.svg" alt="Python 3.10+"/></a>
   <a href="LICENSE"><img src="https://img.shields.io/badge/License-MIT-yellow.svg" alt="License: MIT"/></a>
   <a href="#citation"><img src="https://img.shields.io/badge/Findings_of_EMNLP-2026-red.svg" alt="Findings of EMNLP 2026"/></a>
-  <a href="https://arxiv.org/abs/2608.28361"><img src="https://img.shields.io/badge/arXiv-2608.28361-b31b1b.svg" alt="arXiv"/></a>
+  <a href="https://aclanthology.org/2026.findings-emnlp.1212.pdf"><img src="https://img.shields.io/badge/Paper-PDF-b31b1b.svg" alt="Paper (PDF)"/></a>
 </p>
 
 <p align="center">
   <b>GRACE</b> is a machine unlearning framework that selectively removes harmful or private knowledge from large language models while preserving their general utility. It combines influence functions with a <b>Non-Negative Orthogonal Matching Pursuit (NNOMP)</b> algorithm to identify the minimal forget set that maximally degrades target knowledge, then applies state-of-the-art unlearning methods to erase it.
 </p>
 
----
-
-## Citation
-
-If you use GRACE in your research, please cite:
-
-```bibtex
-@misc{bushipaka2026gracegradientguidedcoresetselectionllm,
-      title={GRACE:Gradient-guided Coreset Selection for LLM Unlearning}, 
-      author={Praveen Bushipaka and Andrea D'Angelo and Lucia Passaro and Tommaso Cucinotta},
-      year={2026},
-      eprint={2608.28361},
-      archivePrefix={arXiv},
-      primaryClass={cs.AI},
-      url={https://arxiv.org/abs/2608.28361}, 
-}
-```
+<p align="center">
+  📄 <b><a href="https://aclanthology.org/2026.findings-emnlp.1212.pdf">Read the paper (Findings of EMNLP 2026)</a></b>
+</p>
 
 ---
 
